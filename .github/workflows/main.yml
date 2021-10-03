@@ -1,6 +1,6 @@
 
 
-name: CI
+name: CI-CD
 
 on:
   push:
@@ -30,6 +30,7 @@ jobs:
             cristovantamayo/rotten-potatoes:latest
             cristovantamayo/rotten-potatoes:v${{ github.run_number }}
   CD:
+    needs: [CI]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
