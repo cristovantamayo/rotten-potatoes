@@ -30,4 +30,3 @@ jobs:
           tags: |
             cristovantamayo/rotten-potatoes:latest
             cristovantamayo/rotten-potatoes:${{ github._run_number }}
-        
