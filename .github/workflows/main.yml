@@ -29,4 +29,4 @@ jobs:
           push: true
           tags: |
             cristovantamayo/rotten-potatoes:latest
-            cristovantamayo/rotten-potatoes:${{ github._run_number }}
+            cristovantamayo/rotten-potatoes:v${{ github.run_number }}
